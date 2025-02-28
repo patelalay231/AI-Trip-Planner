@@ -102,7 +102,7 @@ function CreateTrip() {
                 apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY}
                 selectProps={{
                   value: formData.place,
-                  onChange: (place) => handleChange('place', place ? place.value : ''),
+                  onChange: (place) => handleChange('place', place ? place : ''),
                 }}
               />
               {errors.place && <p className="text-red-500 text-sm mt-1">{errors.place}</p>}
