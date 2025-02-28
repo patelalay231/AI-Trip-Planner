@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import cors from "cors";
+const cors = require("cors");
 import dotenv from "dotenv";
 import { chatSession } from "./services/generate-response";
 
