@@ -63,7 +63,8 @@ function CreateTrip() {
     };
 
     try {
-      const response = await Axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/trip/generate-trip`, tripRequest);
+      const baseUrl = import.meta.env.VITE_BACKEND_URL.replace(/\/$/, ''); // Removes trailing /
+      const response = await Axios.post(`${baseUrl}/api/trip/generate-trip`, tripRequest);
 
       const result = typeof response.data.result === "string" ? JSON.parse(response.data.result) : response.data.result;
       
