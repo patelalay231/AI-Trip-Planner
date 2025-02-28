@@ -63,7 +63,7 @@ function CreateTrip() {
     };
 
     try {
-      const response = await Axios.post('http://localhost:5000/api/trip/generate-trip', tripRequest);
+      const response = await Axios.post(import.meta.env.VITE_BACKEND_URL, tripRequest);
 
       const result = typeof response.data.result === "string" ? JSON.parse(response.data.result) : response.data.result;
       
