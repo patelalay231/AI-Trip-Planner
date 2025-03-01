@@ -8,7 +8,6 @@ An intelligent travel planning application that helps users create personalized 
 - AI-powered itinerary generation
 - Google Places integration for location search
 - Real-time itinerary updates
-- Responsive design for all devices
 - User authentication via Supabase
 
 ## Tech Stack 💻
@@ -28,7 +27,6 @@ An intelligent travel planning application that helps users create personalized 
 - Node.js with Express
 - TypeScript
 - Google's Generative AI
-- CORS for cross-origin requests
 - Environment variable management with dotenv
 
 ## Getting Started 🏁
